@@ -3,8 +3,8 @@ version: "3.3"
 services:
   frontend:
     tty: true
-    container_name: eco_monitor
-    hostname: eco_monitor
+    container_name: demonitor
+    hostname: demonitor
     ports:
       - 3000:3000
       - 2999:2999
@@ -27,8 +27,8 @@ services:
 
     ports:
       - 3307:443
-    container_name: eco_monitor_backend
-    hostname: eco_monitor_backend
+    container_name: demonitor_backend
+    hostname: demonitor_backend
     environment:
       DATABASE: "edciv"
       USER_DB: "root"
@@ -44,8 +44,8 @@ services:
 
 
   mysql:
-    hostname: eco_monitor_mysql
-    container_name: eco_monitor_mysql
+    hostname: demonitor_mysql
+    container_name: demonitor_mysql
     ports:
       - 3306:3306
 
