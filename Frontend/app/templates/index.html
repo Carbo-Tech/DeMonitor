@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inquinamento da Polveri Sottili in Veneto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Inquinamento da Polveri Sottili in Veneto</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Dati ARPAV</h2>
+        <table>
+            <caption>Tabella dei dati sull'inquinamento da polveri sottili in Veneto</caption>
+            <thead>
+                <tr>
+                    <th>Stazione</th>
+                    <th>Data</th>
+                    <th>Tipo Inquinante</th>
+                    <th>Valore (µg/m³)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for riga in dati %}
+                <tr>
+                    <td>{{ riga[0] }}</td>
+                    <td>{{ riga[1].strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                    <td>{{ riga[2] }}</td>
+                    <td>{{ riga[3] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <p class="source">Sorgente dati: <a href="http://www.arpa.veneto.it/arpavinforma/bollettini.php">ARPAV</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2023 - Progetto Flask</p>
+    </footer>
+</body>
+
+</html>

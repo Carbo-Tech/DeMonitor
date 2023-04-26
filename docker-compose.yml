@@ -1,0 +1,72 @@
+version: "3.3"
+
+services:
+  frontend:
+    tty: true
+    container_name: eco_monitor
+    hostname: eco_monitor
+    ports:
+      - 3000:3000
+      - 2999:2999
+    build:
+      context: Frontend
+      dockerfile: Dockerfile
+    restart: always
+
+    volumes:
+      - ./Frontend:/app
+    networks:
+      - external
+      - internal
+      - web
+
+  backend:
+    build:
+      context: Backend
+      target: builder
+
+    ports:
+      - 3307:443
+    container_name: eco_monitor_backend
+    hostname: eco_monitor_backend
+    environment:
+      DATABASE: "edciv"
+      USER_DB: "root"
+      PASSWORD_DB: "passwordsicura"
+      PORT: 443
+    restart: "no"
+    volumes:
+      - ./Backend/app:/app
+    networks:
+      - web
+      - external
+      - internal
+
+
+  mysql:
+    hostname: eco_monitor_mysql
+    container_name: eco_monitor_mysql
+    ports:
+      - 3306:3306
+
+    build:
+      context: Database
+      dockerfile: Dockerfile
+    environment:
+      MYSQL_ROOT_PASSWORD: passwordsicura
+      MYSQL_DATABASE: edciv
+      PORT: 3306
+    volumes:
+      - ./Database:/appdb
+    networks:
+      - web
+      - internal
+
+networks:
+  web:
+    driver: bridge
+  internal:
+    driver: bridge
+    internal: true
+  external:
+    driver: bridge
