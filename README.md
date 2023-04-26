@@ -1,22 +1,15 @@
-<h1 align="center">Benvenuti in EcoMonitor 👋</h1>
+<h1 align="center">Welcome to DeMonitor 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-development-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Carbo-Tech/DeMonitor/blob/main/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
 </p>
 
-EcoMonitor è un'applicazione per la gestione e l'analisi dei dati ambientali, con un focus sull'inquinamento da polveri sottili (PM10). L'applicazione è stata sviluppata per la classe 5BI dell'a.s. 2021-22 nell'ambito del corso di Educazione Civica.
+> DeMonitor è un progetto che si concentra sulla creazione di un frontend per la rappresentazione dei flussi migratori. Il sito web è basato sulla visualizzazione grafica dei flussi migratori e fornisce informazioni su di essi. 
 
-## Scopi del Progetto
-> L'obiettivo di EcoMonitor è quello di sensibilizzare gli utenti sui problemi dell'inquinamento atmosferico, in particolare sulle conseguenze dell'emissione di polveri sottili (PM10) sull'ambiente e sulla salute umana. L'applicazione fornisce un'interfaccia per la visualizzazione dei dati raccolti da diverse stazioni di monitoraggio ambientale e li analizza in modo critico, fornendo informazioni dettagliate sulla qualità dell'aria, tendenze temporali e suggerimenti sui comportamenti da adottare per ridurre l'impatto dell'inquinamento.
+### ✨ [Demo](http://localhost:3000/)
 
-## Realizzazione del Progetto
-> EcoMonitor è stato sviluppato utilizzando diverse tecnologie, tra cui Docker per l'ambiente di sviluppo e FastAPI per la parte del backend, in grado di gestire la raccolta e l'elaborazione dei dati. La parte del frontend è stata sviluppata con Flask e il sito è stato organizzato con un'architettura REST e SPA. Il database utilizzato è MySQL. L'applicazione è in grado di processare i dati ambientali forniti dall'ARPA (Agenzia Regionale per la Protezione Ambientale) e di visualizzarli in un formato fruibile per l'utente generico.
-
-### ✨ [Demo locale su localhost:3000](localhost:3000)
-
-## Installazione
-
-È necessario avere docker installato. In caso contrario, consultare https://docs.docker.com/engine/install/.
-È inoltre necessario avere docker-compose, che può essere installato con:
+## Install
 
 ```sh
  pip install docker-compose
@@ -24,31 +17,28 @@ EcoMonitor è un'applicazione per la gestione e l'analisi dei dati ambientali, c
 
 ## Usage
 
-Nella cartella del progetto:
-
 ```sh
 docker-compose up --build
 ```
 
-per eseguire il progetto, e
+## Author
 
-```sh
-docker-compose down
-```
+👤 **Franesco de Martini**
 
-per arrestare i container.
+* Github: [@deMartiniFrancesco](https://github.com/deMartiniFrancesco)
 
-## Authors 👤
+## 🤝 Contributing
 
-Secchi Pietro Giampaolo,  
-de' Martini di Valle Aperta Francesco,  
-Zaki Pedio,   
-Brunelli Tommaso
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Carbo-Tech/DeMonitor/issues/new/choose). You can also take a look at the [contributing guide](https://github.com/Carbo-Tech/DeMonitor/blob/main/.github/CODE_OF_CONDUCT.md).
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
----
+## 📝 License
 
+Copyright © 2023 [Franesco de Martini](https://github.com/deMartiniFrancesco).<br />
+This project is [MIT](https://github.com/Carbo-Tech/DeMonitor/blob/main/LICENSE) licensed.
+
+***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
