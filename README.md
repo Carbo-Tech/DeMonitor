@@ -23,9 +23,12 @@ docker-compose up --build
 
 ## Author
 
-👤 **Franesco de Martini**
+👤 [**Franesco de Martini**](https://github.com/deMartiniFrancesco)
 
-* Github: [@deMartiniFrancesco](https://github.com/deMartiniFrancesco)
+👤 [**Pietro Secchi**](https://github.com/4BI-SecchiPietro-2021-2022)
+
+👤 [**Zaki Pedio**](https://github.com/PedioZaki-3BI-2020-2021)
+
 
 ## 🤝 Contributing
 
