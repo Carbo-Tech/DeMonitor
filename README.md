@@ -21,7 +21,7 @@
 docker-compose up --build
 ```
 
-## Author
+## Authors
 
 👤 [**Franesco de Martini**](https://github.com/deMartiniFrancesco)
 
