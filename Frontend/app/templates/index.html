@@ -1,73 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Immigrazione irregolare in Italia</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ url_for('static', filename='css/style.css') }}"
-    />
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
-    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Notizie</a></li>
-          <li><a href="#">Statistiche</a></li>
-          <li><a href="#">Opinioni</a></li>
-          <li><a href="#">Contatti</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>Immigrazione irregolare in Italia</h1>
-      <section>
-        <h2>
-          Benvenuti sul sito dedicato all'immigrazione irregolare in Italia
-        </h2>
-        <div class="paragraph">
-          <p>
-            Il fenomeno dell'immigrazione irregolare in Italia è al centro di un
-            grande dibattito pubblico. Scopri le ultime notizie e le statistiche
-            aggiornate sul numero di sbarchi di migranti irregolari in Italia nel
-            nostro sito.
-          </p>
-          <a href="#" class="button">Leggi di più</a>
-        </div>
-      </section>
-      <section>
-        <h2>Statistiche sul fenomeno migratorio in Italia</h2>
-        <div class="paragraph">
-          <p>
-            Consulta le statistiche aggiornate sul numero di immigrati irregolari
-            che sono sbarcati in Italia nel primo trimestre del 2023 e scopri
-            quali sono le principali direttrici del fenomeno migratorio verso
-            l'Europa.
-          </p>
-          <a href="#" class="button">Visualizza le statistiche</a>
-        </div>
-      </section>
-      <section>
-        <h2>Opinioni a confronto sul fenomeno migratorio in Italia</h2>
-        <div class="paragraph">
-          <p>
-            Scopri cosa ne pensano gli esperti del fenomeno migratorio in Italia e
-            confronta le diverse opinioni sulla gestione dell'immigrazione
-            irregolare nel nostro paese.
-          </p>
-          <a href="#" class="button">Scopri le opinioni</a>
-        </div>
-      </section>
-    </main>
-    <footer>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Immigrazione irregolare in Italia</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/addon.css') }}">
+</head>
+
+<body>
+  <header>
+    <h1>Immigrazione irregolare in Italia</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Benvenuti sul sito dedicato all'immigrazione irregolare in Italia</h2>
+      <p>Il fenomeno dell'immigrazione irregolare in Italia è al centro di un grande dibattito pubblico. Scopri le
+        ultime notizie e le statistiche aggiornate sul numero di sbarchi di migranti irregolari in Italia nel nostro
+        sito.</p>
+      <a href="#" class="button">Leggi di più</a>
+    </section>
+    <section>
+      <h2>Statistiche sul fenomeno migratorio in Italia</h2>
+      <p>Consulta le statistiche aggiornate sul numero di immigrati irregolari che sono sbarcati in Italia nel primo
+        trimestre del 2023 e scopri quali sono le principali direttrici del fenomeno migratorio verso l'Europa.</p>
+      <a href="#" class="button">Visualizza le statistiche</a>
+    </section>
+    <section>
+      <h2>Opinioni a confronto sul fenomeno migratorio in Italia</h2>
+      <p>Scopri cosa ne pensano gli esperti del fenomeno migratorio in Italia e confronta le diverse opinioni sulla
+        gestione dell'immigrazione irregolare nel nostro paese.</p>
+      <a href="#" class="button">Scopri le opinioni</a>
+    </section>
+
+      <div class="flex-container">
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="{{ url_for('static', filename='images/lavoratori.jpg') }}"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>Gli effetti negativi dell'immigrazione</h2>
+              
+            </div>
+          </div>
+        </a>
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="https://www.getsmarter.com/disk/public/variants%2FF1rSCstR2cXksD6oSXcG2hvt%2F8b01c349340c643d8edb67b227ed95ee43073bccf34eb847738a09d2c35ba8b2/university_of_cape_town_supply_chain_management_course_page_large_header_banner.jpg"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>Gli effetti positivi dell'immigrazione</h2>
+              
+            </div>
+          </div>
+        </a>
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="https://www.getsmarter.com/disk/public/variants%2FF1rSCstR2cXksD6oSXcG2hvt%2F8b01c349340c643d8edb67b227ed95ee43073bccf34eb847738a09d2c35ba8b2/university_of_cape_town_supply_chain_management_course_page_large_header_banner.jpg"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>I numeri dell'immigrazione</h2>
+              
+            </div>
+          </div>
+        </a>
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="https://www.getsmarter.com/disk/public/variants%2FF1rSCstR2cXksD6oSXcG2hvt%2F8b01c349340c643d8edb67b227ed95ee43073bccf34eb847738a09d2c35ba8b2/university_of_cape_town_supply_chain_management_course_page_large_header_banner.jpg"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>L'immigrazione in Italia</h2>
+
+            </div>
+          </div>
+        </a>
+
+
+
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="https://www.getsmarter.com/disk/public/variants%2FF1rSCstR2cXksD6oSXcG2hvt%2F8b01c349340c643d8edb67b227ed95ee43073bccf34eb847738a09d2c35ba8b2/university_of_cape_town_supply_chain_management_course_page_large_header_banner.jpg"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>Quanti sono gli immigrati in Italia</h2>
+              
+            </div>
+          </div>
+        </a>
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="https://www.getsmarter.com/disk/public/variants%2FF1rSCstR2cXksD6oSXcG2hvt%2F8b01c349340c643d8edb67b227ed95ee43073bccf34eb847738a09d2c35ba8b2/university_of_cape_town_supply_chain_management_course_page_large_header_banner.jpg"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>Chi guadagna dalle partenze</h2>
+              
+            </div>
+          </div>
+        </a>
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="https://www.getsmarter.com/disk/public/variants%2FF1rSCstR2cXksD6oSXcG2hvt%2F8b01c349340c643d8edb67b227ed95ee43073bccf34eb847738a09d2c35ba8b2/university_of_cape_town_supply_chain_management_course_page_large_header_banner.jpg"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>Chi guadagna dagli arrivi</h2>
+              
+            </div>
+          </div>
+        </a>
+
+        <a href="url_di_destinazione">
+          <div class="tile">
+            <img
+              src="https://www.getsmarter.com/disk/public/variants%2FF1rSCstR2cXksD6oSXcG2hvt%2F8b01c349340c643d8edb67b227ed95ee43073bccf34eb847738a09d2c35ba8b2/university_of_cape_town_supply_chain_management_course_page_large_header_banner.jpg"
+              alt="Immagine di sfondo">
+            <div class="overlay">
+              <h2>Il problema degli irregolari</h2>
+              
+            </div>
+          </div>
+        </a>
+      </div>
       <p>
-        © 2023 Immigrazione irregolare in Italia - Tutti i diritti riservati
+        <h2>Gli effetti negativi dell'immigrazione</h2> <br>
+        Gli effetti negativi dell'immigrazione possono essere analizzati in relazione al tema dell'immigrazione irregolare in Italia nel primo trimestre del 2023. <br> Nonostante gli argomenti esposti nel tema precedente riguardassero principalmente gli aspetti positivi dell'immigrazione, è importante considerare anche gli impatti negativi che possono derivare da questo fenomeno. <br> Uno degli effetti negativi più evidenti dell'immigrazione irregolare è la pressione che essa può esercitare sulle risorse e sui servizi pubblici dei paesi di accoglienza. <br> L'opposizione all'immigrazione può diventare un tema centrale nel dibattito politico, polarizzando la società e minando la coesione sociale. <br>
+        Sebbene l'immigrazione possa avere benefici economici e sociali, è importante riconoscere anche gli effetti negativi che possono derivarne. <br> Un'adeguata gestione e regolamentazione dell'immigrazione sono fondamentali per minimizzare gli impatti negativi e massimizzare i vantaggi derivanti da un fenomeno così complesso e multidimensionale.
       </p>
-    </footer>
-  </body>
+      
+      <p>
+        <h2>Gli effetti positivi dell'immigrazione</h2> <br>
+        L'immigrazione irregolare può essere un fenomeno complesso e controverso, ma è importante considerare anche gli effetti positivi che può avere sulla società e sull'economia. <br> Nonostante le percezioni distorte e le preoccupazioni legate all'immigrazione, gli esperti concordano sul fatto che l'Italia beneficia dell'apporto dei migranti. <br>
+        In primo luogo, l'immigrazione contribuisce alla crescita economica. In secondo luogo, l'immigrazione può influire positivamente sulla spesa dei consumatori. <br> Gli immigrati, una volta integrati nella società, diventano parte attiva del sistema economico, aumentando la domanda di beni e servizi. <br> Questo impulso alla spesa può stimolare ulteriormente la crescita economica e contribuire alla vitalità del mercato interno. <br>
+        L'immigrazione può avere un impatto positivo sulla demografia e sulla struttura della popolazione. <br> In un periodo in cui l'Italia affronta il problema del calo demografico e dell'invecchiamento della popolazione, l'arrivo di immigrati può contribuire a riequilibrare la piramide demografica, fornendo nuova forza lavoro e contribuendo al sistema previdenziale. <br>
+        In conclusione, nonostante le sfide che l'immigrazione irregolare può presentare, è importante riconoscere gli effetti positivi che può avere sulla società e sull'economia italiana.
+      </p>
+      
+      <p>
+        <h2>I numeri dell'immigrazione</h2>
+        L'immigrazione irregolare in Italia nel primo trimestre del 2023 ha registrato un notevole aumento di sbarchi rispetto agli anni precedenti. <br> Questo fenomeno complesso ha tre principali direttrici: via terra attraverso i Balcani, gli ingressi attraverso la penisola iberica e diverse rotte via mare, tra cui quella che conduce in Italia. <br> Tuttavia, è importante considerare il fenomeno dell'immigrazione in maniera obiettiva, guardando oltre gli aspetti negativi spesso enfatizzati. <br>
+        Nonostante la percezione distorta dell'opinione pubblica, gli economisti concordano sul fatto che l'Italia necessita di immigrati per sostenere la sua economia. <br> Gli immigrati possono contribuire a colmare il divario di manodopera in settori come l'agricoltura e l'assistenza sanitaria, dove il lavoro locale è spesso poco attraente. <br> La gestione dell'immigrazione richiede soluzioni a lungo termine e una cooperazione europea, che includa l'accoglienza e l'integrazione dei migranti, il rispetto delle leggi e la prevenzione dei flussi irregolari sfruttati da gruppi criminali.
+      </p>
+      <p>
+        <h2>L'immigrazione in Italia</h2>
+        L'immigrazione in Italia è un argomento di grande rilevanza e dibattito. <br> Nel primo trimestre del 2023, si è registrato un significativo aumento degli sbarchi di migranti irregolari nel paese, evidenziando l'importanza di affrontare in modo obiettivo e basato sui dati reali la questione dell'immigrazione. <br> Le rotte migratorie verso l'Europa includono vie terrestri attraverso i Balcani, l'accesso attraverso la penisola iberica e rotte marittime, tra cui quella verso l'Italia, che ha visto un incremento notevole. <br>
+        Molti italiani sovrastimano il numero di immigrati, pensando che costituiscano circa il 25% della popolazione, quando in realtà rappresentano tra il 9 e il 10%. Gli economisti concordano sul fatto che l'Italia necessiti di immigrati, specialmente giovani, per sostenere l'economia. <br> L'immigrazione contribuisce alla crescita economica, alla produttività e alla spesa dei consumatori. <br> Affrontare l'immigrazione irregolare richiede strategie a lungo termine e una cooperazione tra i paesi europei. <br> È fondamentale equilibrare l'accoglienza e l'integrazione dei migranti con il rispetto delle leggi e la prevenzione dei flussi irregolari, spesso sfruttati da gruppi criminali. <br> Un maggiore coordinamento e solidarietà tra i paesi dell'Unione Europea, insieme a un sistema di quote per la distribuzione degli immigrati, possono favorire una gestione più efficace del fenomeno migratorio.
+      </p>
+      
+      <p>
+        <strong>Quanti sono gli immigrati in Italia</strong>
+        Secondo il tema appena discusso sull'immigrazione irregolare in Italia nel primo trimestre del 2023, si è osservato un aumento significativo degli sbarchi rispetto agli anni precedenti. <br> L'autore sottolinea che la percezione dell'opinione pubblica sull'immigrazione irregolare in Italia spesso è distorta e ingigantita. <br> Molti italiani ritengono che gli immigrati rappresentino quasi il 25% della popolazione, mentre in realtà la percentuale si attesta tra il 9 e il 10%, considerando sia gli immigrati regolari che quelli irregolari. <br> Questo dato evidenzia una discrepanza tra la percezione e la realtà della presenza di immigrati nel paese. <br> Nonostante ciò, gli economisti concordano sul fatto che l'Italia necessiti di immigrati, soprattutto giovani, per sostenere l'economia del paese. <br>
+        Gli immigrati possono apportare un impatto positivo sulla crescita economica, la produttività e la spesa dei consumatori. <br> Pertanto, è importante considerare con obiettività la situazione dell'immigrazione in Italia, basandosi sui dati reali e valutando il contributo che gli immigrati possono offrire alla società e all'economia del paese.
+      </p>
+      
+      <p>
+        <strong>Chi guadagna dalle partenze</strong>
+        Descrizione di chi trae vantaggio dalle partenze degli immigrati, ad esempio i paesi di destinazione, le agenzie di reclutamento, ecc.
+      </p>
+      
+      <p>
+        <strong>Chi guadagna dagli arrivi</strong>
+        Descrizione di chi trae vantaggio dagli arrivi degli immigrati, come ad esempio i datori di lavoro, i settori economici che si affidano alla manodopera immigrata, ecc.
+      </p>
+      
+      <p>
+        <strong>Il problema degli irregolari</strong>
+        Descrizione del problema degli immigrati irregolari, compresi i rischi e le difficoltà che affrontano, l'impatto sul sistema di sicurezza sociale, le politiche di contrasto all'immigrazione irregolare, ecc.
+      </p>
+      
+  </main>
+</body>
+
 </html>
