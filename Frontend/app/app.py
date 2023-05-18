@@ -6,33 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    dati = []
-    try:
-        connection = mysql.connector.connect(host='eco_monitor_mysql',
-                                             user='root',
-                                             database='edciv',
-                                             password='passwordsicura')
-        if connection.is_connected():
-            db_Info = connection.get_server_info()
-            print("Connected to MySQL Server version ", db_Info)
-            cursor = connection.cursor()
-            cursor.execute("select database()", "")
-            record = cursor.fetchone()
-            print("You're connected to database: ", record)
-            print("Performing queries...")
-            # query
-            sql = "SELECT * FROM rilevazioni;"
-            cursor.execute(sql)
-            dati = cursor.fetchall()
-
-            # close connection
-            cursor.close()
-            connection.close()
-            print("MySQL connection is closed")
-    except Error as e:
-        print("Error while connecting to MySQL", e)
-
-    return render_template('index.html', dati=dati)
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
@@ -41,6 +15,9 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+@app.route('/portfolio-details.html')
+def contact2():
+    return render_template('inner-page.html')
 
 if __name__ == '__main__':
     app.run()
