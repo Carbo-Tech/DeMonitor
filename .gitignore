@@ -16,3 +16,6 @@ yarn_cache
 Frontend/yarn.lock
 Frontend/certs/
 
+.tmp.driveupload/
+
+**/desktop.ini
